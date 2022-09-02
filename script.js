@@ -4,7 +4,9 @@ input.oninput = () => {
     weight.value = input.value;
 }
 weight.onchange = () => {
-    if(weight.value != input.value){
+    if(weight.value == ''){
+        input.value = 0;
+    }else if(weight.value != input.value){
         input.value = weight.value
     }
 }
