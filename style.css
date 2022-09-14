@@ -196,12 +196,7 @@ body{
     align-items: center;
     opacity: 0;
     visibility: hidden;
-}
-
-.calculator-item-additional.show{
-    visibility: visible;
-    opacity: 1;
-    transition: all 1s ease;
+    transition: all .5s ease;
 }
 
 .calculator-item-additional::after{

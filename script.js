@@ -9,21 +9,17 @@ const heightRange = document.querySelector('#heightRange');
 const price = document.querySelector('#price');
 const additional = document.querySelector(".calculator-item-additional")
 
-weight.onfocus = () => {
-    additional.classList.add('show')
+weight.onclick = e => {
+    additional.style.visibility = 'visible';
+    additional.style.opacity = 1;
 }
-weightRange.onfocus = () => {
-    additional.classList.add('show')
-}
-weight.onblur = () => {
-    additional.classList.remove('show')
-}
-weightRange.onblur = () => {
-    additional.classList.remove('show')
+weightRange.onclick = e => {
+    additional.style.visibility = 'visible';
+    additional.style.opacity = 1;
 }
 
 lengthRange.oninput = () => {
-    length.value = lengthRange.value
+    length.value = lengthRange.value;
 }
 length.onchange = () => {
     if(length.value == ''){
