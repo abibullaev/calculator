@@ -14,12 +14,42 @@
     
     <div class="calculator-wrapper">
         <div class="calculator-container">
+            <div class="calculator-item-additional">
+                <p class="calculator-item-additional-text">Вы можете указать следущие параметры для точного просчёта стоимости доставки</p>
+                <div class="calculator-item-additional-sizes">
+                    <div class="calculator-item-additional-size-container">
+                        <p class="calculator-item-additional-size-text">Длина</p>
+                        <div class="calculator-item-additional-size-wrapper">
+                            <input type="text" value="0" id="length" class="calculator-item-additional-size-input">
+                            <span class="calculator-item-additional-size-sm">см</span>
+                            <input type="range" value="0" id="lengthRange" class="calculator-item-additional-size-range">
+                        </div>
+                    </div>
+                    <div class="calculator-item-additional-size-container">
+                        <p class="calculator-item-additional-size-text">Ширина</p>
+                        <div class="calculator-item-additional-size-wrapper">
+                            <input type="text" value="0" id="width" class="calculator-item-additional-size-input">
+                            <span class="calculator-item-additional-size-sm">см</span>
+                            <input type="range" value="0" id="widthRange" class="calculator-item-additional-size-range">
+                        </div>
+                    </div>
+                    <div class="calculator-item-additional-size-container">
+                        <p class="calculator-item-additional-size-text">Высота</p>
+                        <div class="calculator-item-additional-size-wrapper">
+                            <input type="text" value="0" id="height" class="calculator-item-additional-size-input">
+                            <span class="calculator-item-additional-size-sm">см</span>
+                            <input type="range" value="0" id="heightRange" class="calculator-item-additional-size-range">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="calculator-item first">
                 <p class="calculator-item-text">Вес посылки</p>
                 <div class="calculator-item-wrapper">
                     <input type="text" class="calculator-item-weight" value="0" id="weight">
                     <span class="calculator-item-size">кг</span>
-                    <input type="range" class="calculator-item-range" min="0" max="20" id="range" value="0" step="1">
+                    <input type="range" class="calculator-item-range" min="0" max="20" id="weightRange" value="0" step="1">
                 </div>
             </div>
             <div class="calculator-item">

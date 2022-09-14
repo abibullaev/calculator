@@ -1,11 +1,61 @@
 const weight = document.querySelector('#weight');
-const range = document.querySelector('#range');
+const weightRange = document.querySelector('#weightRange');
+const length = document.querySelector('#length');
+const lengthRange = document.querySelector('#lengthRange');
+const width = document.querySelector('#width');
+const widthRange = document.querySelector('#widthRange');
+const height = document.querySelector('#height');
+const heightRange = document.querySelector('#heightRange');
 const price = document.querySelector('#price');
+const additional = document.querySelector(".calculator-item-additional")
 
-range.oninput = () => {
-    weight.value = range.value;
+weight.onfocus = () => {
+    additional.classList.add('show')
+}
+weightRange.onfocus = () => {
+    additional.classList.add('show')
+}
+weight.onblur = () => {
+    additional.classList.remove('show')
+}
+weightRange.onblur = () => {
+    additional.classList.remove('show')
+}
 
-    switch (range.value){
+lengthRange.oninput = () => {
+    length.value = lengthRange.value
+}
+length.onchange = () => {
+    if(length.value == ''){
+        lengthRange.value = 0;
+    }else if(length.value != weightRange.value){
+        lengthRange.value = length.value
+    }
+}
+widthRange.oninput = () => {
+    width.value = widthRange.value
+}
+width.onchange = () => {
+    if(width.value == ''){
+        widthRange.value = 0;
+    }else if(width.value != widthRange.value){
+        widthRange.value = width.value
+    }
+}
+heightRange.oninput = () => {
+    height.value = heightRange.value
+}
+height.onchange = () => {
+    if(height.value == ''){
+        heightRange.value = 0;
+    }else if(height.value != heightRange.value){
+        heightRange.value = width.value
+    }
+}
+weightRange.oninput = () => {
+    weight.value = weightRange.value;
+
+    switch (weightRange.value){
         case '0':
             price.value = '0 $';
             break;
@@ -72,12 +122,11 @@ range.oninput = () => {
             break;
     }
 }
-
 weight.onchange = () => {
     if(weight.value == ''){
-        range.value = 0;
-    }else if(weight.value != range.value){
-        range.value = weight.value
+        weightRange.value = 0;
+    }else if(weight.value != weightRange.value){
+        weightRange.value = weight.value
     }
 
     switch (weight.value){
