@@ -205,13 +205,6 @@ body{
     transition: all .5s ease;
 }
 
-.calculator-item-additional::after{
-    content: url("/arrow.png");
-    position: absolute;
-    bottom: -20px;
-    left: 45px; 
-}
-
 .calculator-item-additional-size-text{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -318,10 +311,6 @@ body{
         margin-bottom: 18px;
         left: 0;
         top: 0;
-    }
-    .calculator-item-additional::after{
-        left: 48%;
-        transform: translate(-50%, 0);
     }
     .calculator-button{
         width: 239px;
