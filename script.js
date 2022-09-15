@@ -10,11 +10,6 @@ const price = document.querySelector('#price');
 const additional = document.querySelector(".calculator-item-additional")
 const firstItem = document.querySelector('.first');
 
-firstItem.onclick = () => {
-    additional.style.visibility = 'visible';
-    additional.style.opacity = 1;
-}
-
 lengthRange.oninput = () => {
     length.value = lengthRange.value;
 }
