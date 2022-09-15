@@ -8,12 +8,9 @@ const height = document.querySelector('#height');
 const heightRange = document.querySelector('#heightRange');
 const price = document.querySelector('#price');
 const additional = document.querySelector(".calculator-item-additional")
+const firstItem = document.querySelector('.first');
 
-weight.onclick = e => {
-    additional.style.visibility = 'visible';
-    additional.style.opacity = 1;
-}
-weightRange.onclick = e => {
+firstItem.onclick = () => {
     additional.style.visibility = 'visible';
     additional.style.opacity = 1;
 }
