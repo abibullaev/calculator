@@ -258,6 +258,9 @@ body{
     color: #878787;
     padding-left: 9px;
 }
+.calculator-item-additional-size-input.error{
+    color: red;
+}
 .calculator-item-additional-size-range[type=range]{
     -webkit-appearance: none;
     height: 3px;
