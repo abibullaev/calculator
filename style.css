@@ -117,6 +117,7 @@ body {
     font-size: 13px;
     line-height: 148.9%;
     color: #000000;
+    white-space: nowrap;
 }
 .calculator-button {
     background: #3ab6f4;
