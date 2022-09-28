@@ -380,6 +380,12 @@ body {
         width: 239px;
         height: 50px;
     }
+
+    .calculator-item-from{
+        width: 239px;
+        height: 50px;
+    }
+
     .calculator-item-range[type="range"] {
         width: 239px;
     }
