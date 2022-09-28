@@ -36,6 +36,9 @@ heightRange.oninput = () => {
 
 weightRange.addEventListener("input", e => {
     weight.value = weightRange.value;
+})
+
+weightRange.addEventListener("click", e => {
     additional.classList.add('active');
     e.stopPropagation();
 })
